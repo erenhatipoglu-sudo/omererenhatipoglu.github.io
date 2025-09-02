@@ -6,8 +6,9 @@ This is my personal website hosted with **GitHub Pages**.
 ## About Me
 - 🖥️ I love coding and tech
 - 🌱 Always learning new things
-- 📫 Reach me at: myemail@example.com
+- 📫 Reach me at: eren.hatipoglu@hisarschool.k12.tr
+
 
 ## Projects
-- [Project 1](#) – cool description here
-- [Project 2](#) – another awesome project
+- [Project 1]Tic Tac Toe Scratch Project – https://scratch.mit.edu/projects/1212300434/
+
