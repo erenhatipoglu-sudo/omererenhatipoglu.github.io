@@ -10,5 +10,5 @@ This is my personal website hosted with **GitHub Pages**.
 
 
 ## Projects
-- [Project 1]Tic Tac Toe Scratch Project – [https://scratch.mit.edu/projects/1212300434/]
+- [Project 1]Tic Tac Toe Scratch Project – [Scratch game](https://scratch.mit.edu/projects/1212300434/)
 
