@@ -20,6 +20,8 @@ This is a game i made on Scratch for my CSP class.
 Each square has its own variable which changes according to which turn its pressed. 
 If it is the 1st, 3rd, 5th,7th or 9th turn, it turns to x, and when its not it turns to o. 
 If there is a row with only x or o, the game ends.
+
+
 Documentation about Big Ideas 1 Creative Development [Documentation](https://www.veed.io/view/539aed93-e0fd-479f-82ba-47bb17189d88?panel=share)
 
 ### Error and Bugs ⚠️
