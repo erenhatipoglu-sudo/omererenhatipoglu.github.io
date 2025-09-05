@@ -1,163 +1,29 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Can Ortanç — Portfolio</title>
-  <meta name="description" content="Can Ortanç | 10. sınıf öğrencisi — yazılım, web ve tasarım projeleri." />
-  <style>
-    :root{ --bg:#ffffff; --text:#111; --link:#0b5ed7; --muted:#666; --border:#ddd; }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
-    header,main,footer{max-width:900px;margin:0 auto;padding:12px 16px}
-    header{border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:12px}
-    nav a{margin-right:12px;text-decoration:none;color:var(--link);font-weight:bold}
-    nav a[aria-current="page"]{text-decoration:underline}
-    h1{font-size:24px;margin:0}
-    h2{font-size:20px;margin:0 0 8px}
-    .page{display:none;padding:16px 0;border-bottom:1px solid var(--border)}
-    .page:last-of-type{border-bottom:0}
-    .muted{color:var(--muted)}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
-    .card{border:1px solid var(--border);border-radius:8px;padding:12px}
-    .links{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
-    .links a{border:1px solid var(--border);padding:6px 10px;text-decoration:none;color:var(--link);border-radius:4px;font-size:14px}
-    .video-container{max-width:700px;width:100%;margin:10px 0 20px}
-    .video-container video{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:6px}
-    /* iframe için stil */
-    .video-container iframe{width:100%;height:394px;display:block;border:1px solid var(--border);border-radius:6px}
-    img{max-width:100%;border:1px solid var(--border);border-radius:6px;margin-top:10px}
-    footer{border-top:1px solid var(--border);margin-top:24px;padding-top:16px;font-size:14px}
-    hr{border:none;border-top:1px solid var(--border);margin:16px 0}
-  </style>
+  <title>Eren Hatipoğlu</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div><strong>Can Ortanç</strong></div>
-    <nav aria-label="Primary">
-      <a href="#home" id="nav-home">Home</a>
-      <a href="#projects" id="nav-projects">Projects</a>
-      <a href="#big-ideas" id="nav-big-ideas">Big Ideas</a>
-      <a href="#documentation" id="nav-documentation">Documentation</a>
-    </nav>
-  </header>
-
-  <main>
-    <!-- HOME -->
-    <section id="home" class="page" data-title="Home — Can Ortanç">
-      <h2>Home</h2>
-      <p class="muted">10. sınıf öğrencisi · Python / Web · Tasarım ve bilim meraklısı</p>
-      <p>Hi! I’m Can. I love working on software, design, and science. I develop projects in Python, maintain this portfolio on GitHub Pages, and I care a lot about learning new things. I’m drawn to ideas with social impact—especially around security and accessibility.</p>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="page" data-title="Projects — Can Ortanç">
-      <h2>Projects</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Scratch Tic-Tac-Toe</h3>
-          <p>The tic-tac-toe game that i did in Scratch.</p>
-          <div class="links">
-            <a href="https://scratch.mit.edu/projects/1212433117/" target="_blank" rel="noopener">Play on Scratch</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- BIG IDEAS -->
-    <section id="big-ideas" class="page" data-title="Big Ideas — Can Ortanç">
-      <h2>Big Idea 1 — Creative Development</h2>
-
-      <article class="card">
-        <p>
-          In this unit, I learned to turn an idea into a working program by planning, testing, showing, and explaining my design.  
-          I took notes and screenshots as documentation and made a short narration to show how the program works and why I built it.
-        </p>
-
-        <ul>
-          <li><strong>1.1 Collaboration:</strong> We used teamwork to split tasks and problem solving to block each other to dont get bugs.</li>
-          <li><strong>1.2 Program Design & Development:</strong> I have developed simple algorithms, drafted pseudocode, and used debugging techniques such as print checks and step-by-step tests to help refine the behavior.</li>
-          <li><strong>1.3 Program Function & Purpose:</strong> Set a clear goal and identified the target audience, organized the input and output processes, grouped the logic into functions and procedures, and documented everything carefully so that others can easily understand and reuse the work.</li>
-          <li><strong>1.4 Identifying & Correcting Errors:</strong> Wrote small tests, tried edge cases, and added basic error handling to avoid crashes or invalid inputs incode.</li>
-        </ul>
-
-        <p class="muted">
-          <strong>4-minute narration:</strong> a short screen-recording that summarizes the purpose, key features, and 
-          one example of debugging. (See the video below.)
-        </p>
-
-        <!-- VEED linkiyle gömülü oynatıcı -->
-        <div class="video-container" id="bigidea1-video">
-          <iframe 
-            src="https://www.veed.io/view/f034f216-00f3-4b66-905b-4a739faf3acb?panel=share" 
-            title="Big Idea 1 — Creative Development"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-          <div class="links">
-            <a href="https://www.veed.io/view/f034f216-00f3-4b66-905b-4a739faf3acb?panel=share" target="_blank" rel="noopener">Open in new tab</a>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <!-- DOCUMENTATION -->
-    <section id="documentation" class="page" data-title="Docs — Can Ortanç">
-      <div class="links" aria-label="Docs Links">
-      </div>
-
-      <hr>
-
-      <article class="card">
-        <h3>Scratch Tic-Tac-Toe — Documentation</h3>
-        <p lang="en">
-          This Scratch project is a Tic-Tac-Toe game I built with help from my friend Ö.E.H.
-          Nine tiles toggle between X and O; win sprites check rows, columns, and diagonals, highlight the
-          winning line, and stop input. Next steps: fix edge-case bugs, add win/draw counters, a reset and
-          scoreboard, player vs. CPU mode, sound effects, and cleaner code.
-        </p>
-        <p><a href="https://www.veed.io/view/1f4218c4-9c37-4579-b079-d8ef7a13e7f9?panel=share" target="_blank" rel="noopener">Watch the video</a></p>
-      </article>
-    </section>
-  </main>
-
-  <footer>
-    <div class="links" aria-label="Profile Links">
-      <a href="https://github.com/canortn" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://scratch.mit.edu/users/canortanchisarschool/" target="_blank" rel="noopener">Scratch</a>
-    </div>
-  </footer>
-
-  <script>
-    // Basit hash router
-    const pages = Array.from(document.querySelectorAll('.page'));
-    const navLinks = {
-      home: document.getElementById('nav-home'),
-      projects: document.getElementById('nav-projects'),
-      'big-ideas': document.getElementById('nav-big-ideas'),
-      documentation: document.getElementById('nav-documentation')
-    };
-
-    function showPage(name){
-      pages.forEach(sec => sec.style.display = 'none');
-      Object.values(navLinks).forEach(a => a && a.removeAttribute('aria-current'));
-      const id = name || 'home';
-      const active = document.getElementById(id);
-      if(active){
-        active.style.display = 'block';
-        if(navLinks[id]) navLinks[id].setAttribute('aria-current','page');
-        document.title = active.getAttribute('data-title') || 'Can Ortanç — Portfolio';
-      }else{
-        location.hash = '#home';
-      }
-    }
-    function onRouteChange(){
-      const hash = location.hash.replace('#','');
-      showPage(hash || 'home');
-    }
-    window.addEventListener('hashchange', onRouteChange);
-    window.addEventListener('DOMContentLoaded', onRouteChange);
-  </script>
+  <h1> Ömer Eren Hatipoğlu</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="big-ideas.html">Big Ideas</a>
+    <a href="documentation.html">Documentation</a>
+    <a href="swift-code.html">Swift Code</a>
+  </nav>
+  <section>
+    <h2>About Me</h2>
+    <p>My name is Eren Hatipoğlu I currently study at Hisar School in Türkiye. I am 10th grade. I am interested in enviormental subject politics, law and such but I have been more workig on STEM subjects. Such as climate and sustainability, Robot making, and other related things.</p>
+  </section>
+  <section>
+    <h2>Recently...</h2>
+    <p>→ In AP CSP class we developed a XOX game on scratch. You can play it here: https://scratch.mit.edu/projects/1212301285/fullscreen/</p>
+    <p>→ In AP CSP class we proggramed a basic calculator on python in collabration with pairs.</p>
+    <p>→ In AP CSP class we attempted to proggram a XOX game using the Swift coding platform.</p>
+    <p>→ In AP CSP class we built our github websites and designed</p>
+                                                                                                                                                                                  <
+  </section> 
 </body>
 </html>
