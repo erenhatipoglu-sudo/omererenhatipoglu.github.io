@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eren Hatipoglu — Portfolio</title>
+  <meta name="description" content="Eren Hatipoglu | 10th frader — coding and web designing." />
+  <style>
+    :root{ --bg:#ffffff; --text:#111; --link:#0b5ed7; --muted:#666; --border:#ddd; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+    header,main,footer{max-width:900px;margin:0 auto;padding:12px 16px}
+    header{border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:12px}
+    nav a{margin-right:12px;text-decoration:none;color:var(--link);font-weight:bold}
+    nav a[aria-current="page"]{text-decoration:underline}
+    h1{font-size:24px;margin:0}
+    h2{font-size:20px;margin:0 0 8px}
+    .page{display:none;padding:16px 0;border-bottom:1px solid var(--border)}
+    .page:last-of-type{border-bottom:0}
+    .muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+    .card{border:1px solid var(--border);border-radius:8px;padding:12px}
+    .links{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+    .links a{border:1px solid var(--border);padding:6px 10px;text-decoration:none;color:var(--link);border-radius:4px;font-size:14px}
+    .video-container{max-width:700px;width:100%;margin:10px 0 20px}
+    .video-container video{width:100%;height:auto;display:block;border:1px solid var(--border);border-radius:6px}
+    .video-container iframe{width:100%;height:394px;display:block;border:1px solid var(--border);border-radius:6px}
+    pre{overflow:auto;background:#f7f7f7;border:1px solid var(--border);border-radius:6px;padding:10px;font-size:13px}
+    code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+    details summary{cursor:pointer;color:var(--link);font-weight:bold;margin:8px 0}
+    img{max-width:100%;border:1px solid var(--border);border-radius:6px;margin-top:10px}
+    footer{border-top:1px solid var(--border);margin-top:24px;padding-top:16px;font-size:14px}
+    hr{border:none;border-top:1px solid var(--border);margin:16px 0}
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Eren Hatipoglu</strong></div>
+    <nav aria-label="Primary">
+      <a href="#home" id="nav-home">Home</a>
+      <a href="#projects" id="nav-projects">Projects</a>
+      <a href="#big-ideas" id="nav-big-ideas">Big Ideas</a>
+      <a href="#documentation" id="nav-documentation">Documentation</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page" data-title="Home — Eren Hatipoglu">
+      <h2>Home</h2>
+      <p class="muted">10. sınıf öğrencisi · Python / Web · Tasarım ve bilim meraklısı</p>
+      <p>Hi! I’m Eren. I love working on software, design, and science. I develop projects in Python, maintain this portfolio on GitHub Pages, and I care a lot about learning new things. I’m drawn to ideas with social impact—especially around security and accessibility.</p>
+    </section>
+
+    <section id="projects" class="page" data-title="Projects — Eren Hatipoglu">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>SwiftUI Calculator</h3>
+          <p>The Calculator I did with Swift code.</p>
+          <div class="video-container">
+          </div>
+          <div class="links"></div>
+          <details>
+            <summary>Show Swift code</summary>
+            <pre><code class="language-swift">import SwiftUI
+struct ContentView: View {
+@State var n1=""
+@State var n2=""
+@State var result=0
+var body: some View {
+        VStack {
+            Text("Simple Calculator")
+            TextField("Enter first number", text:$n1)
+            TextField("Enter first number", text:$n2)  
+        HStack (spacing:15) {  
+                Button("+") {
+        if let a=Int(n1), let b=Int(n2) {
+        result=a+b
+                    }
+                }
+                Button("-") {    
+        if let a=Int(n1), let b=Int(n2) {
+        result=a-b
+                    }
+                }
+                Button("*") {
+        if let a=Int(n1), let b=Int(n2) { 
+        result=a*b
+                        }
+                       }
+                Button("/") {     
+        if let a=Int(n1), let b=Int(n2) {
+        result=a/b
+                    }
+                }     
+            }
+        .buttonStyle(.borderedProminent)
+        Text("Result: \(result)")
+    }
+  }
+}
+</code></pre>
+          </details>
+        </article>
+
+        <article class="card">
+          <h3>SwiftUI Portrait</h3>
+          <p>The Portrait I did with Swift code.</p>
+          <div class="video-container">
+          </div>
+          <div class="links"></div>
+          <details>
+            <summary>Show Swift code</summary>
+            <pre><code class="language-swift">import SwiftUI
+struct ContentView: View {    
+    var body: some View {
+        ZStack {   
+            
+            Capsule()
+                .frame(width: 170, height:250)
+                .foregroundStyle(Color.brown)   
+            
+            Capsule()
+                .frame(width:125, height:100)
+                .offset(y:-105)
+                .offset(x:-40)
+                .foregroundStyle(Color.black)
+            
+            Capsule()
+                .frame(width:125, height:100)
+                .offset(y:-105)
+                .offset(x:40)
+                .foregroundStyle(Color.black)
+            Rectangle()
+                .frame(width: 80, height: 165)
+                .offset(y:175)
+                .foregroundStyle(Color.brown)
+            
+            Rectangle()
+                .frame(width:300,height:250)
+                .offset(y:350)
+                .foregroundStyle(Color.blue)
+            
+            Capsule()
+                .frame(width: 25, height:30)
+                .foregroundStyle(Color.black)
+                .offset(y:-25)
+                .offset(x:-39)
+            
+            Capsule()
+                .frame(width: 25, height:30)
+                .foregroundStyle(Color.black)
+                .offset(y:-25)
+                .offset(x:39)
+        }
+    }
+}
+</code></pre>
+          </details>
+        </article>
+
+        <article class="card">
+          <h3>SwiftUI Clock</h3>
+          <p>The Clock I did with Swift code.</p>
+          <div class="video-container">
+          </div>
+          <div class="links"></div>
+          <details>
+            <summary>Show Swift code</summary>
+            <pre><code class="language-swift">import SwiftUI
+
+struct ContentView: View {
+    
+    @State var hour = 13
+    @State var minuteSeg = 0   
+    
+    var body: some View {
+        
+        VStack(spacing: 16) {
+            
+            Text("Time: \(hour)")            
+            
+            ZStack {
+                
+                if hour < 12 {
+                    
+                    Circle()
+                        .fill(Color.yellow)
+                        .opacity(0.8)
+                        .overlay(Circle().stroke(.white, lineWidth: 4))
+                        .frame(width: 200, height: 200)
+                    
+                } else {
+                    
+                    Circle()
+                        .fill(Color.blue)
+                        .opacity(0.8)
+                        .overlay(Circle().stroke(.white, lineWidth: 4))
+                        .frame(width: 200, height: 200)
+                    
+                }
+                
+                Group {
+                    
+                    if minuteSeg == 0 { 
+                        Rectangle().fill(.white)
+                            .frame(width: 5, height: 80)
+                            .offset(x: 0, y: -43)
+                    } else if minuteSeg == 1 { 
+                        Rectangle().fill(.white)
+                            .frame(width: 80, height: 5)
+                            .offset(x: 43, y: 0)
+                    } else if minuteSeg == 2 {
+                        Rectangle().fill(.white)
+                            .frame(width: 5, height: 80)
+                            .offset(x: 0, y: 43)
+                    } else { 
+                        Rectangle().fill(.white)
+                            .frame(width: 80, height: 5)
+                            .offset(x: -43, y: 0)
+                    }
+                    
+                }
+                
+                Rectangle()
+                    .fill(.white)
+                    .frame(width: 8, height: 40)
+                    .offset(x: 0, y: -25)
+                
+                Circle()
+                    .fill(.white)
+                    .frame(width: 10, height: 10)
+                
+            }
+            
+            .onTapGesture {
+                minuteSeg += 1
+                if minuteSeg == 4 {
+                    minuteSeg = 0
+                    hour += 1
+                }
+            }
+        }
+    }
+}
+</code></pre>
+          </details>
+        </article>
+      </div>
+    </section>
+
+    <section id="big-ideas" class="page" data-title="Big Ideas — Eren Hatipoglu">
+      <h2>Big Idea 1 — Creative Development</h2>
+
+      <article class="card">
+        <p>
+          In this unit, I learned to turn an idea into a working program by planning, testing, showing, and explaining my design.  
+          I took notes and screenshots as documentation and made a short narration to show how the program works and why I built it.
+        </p>
+
+        <ul>
+          <li><strong>1.1 Collaboration:</strong> We used teamwork to split tasks and problem solving to unblock each other during bugs.</li>
+          <li><strong>1.2 Program Design & Development:</strong> I developed simple algorithms, drafted pseudocode, and used debugging (print checks, step-by-step tests) to refine behavior.</li>
+          <li><strong>1.3 Program Function & Purpose:</strong> Clear goal & audience; mapped input/output; grouped logic into functions/procedures; wrote documentation.</li>
+          <li><strong>1.4 Identifying & Correcting Errors:</strong> Wrote small tests, tried edge cases, and added basic error handling to avoid crashes or invalid inputs.</li>
+        </ul>
+
+        <p class="muted"><strong>1.5-minute narration:</strong> see the embedded video in this section.</p>
+
+        <div class="video-container" id="bigidea1-video">
+          <iframe 
+            src="https://www.veed.io/view/99754995-1d80-494b-b3f9-456cede60ffa?panel=share" 
+            title="Big Idea 1 — Creative Development"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <div class="links">
+            <a href="https://www.veed.io/view/99754995-1d80-494b-b3f9-456cede60ffa?panel=share" target="_blank" rel="noopener">Open in new tab</
+
+
+
+
+
+
+
+ChatGPT’ye sor
